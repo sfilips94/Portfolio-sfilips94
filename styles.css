@@ -11,10 +11,12 @@ h1 {
     background-color: black;
     color: white;
     font-style: italic;
+    font-size: 3rem;
 }
 
 h2 {
     font-style: italic;
+    font-size: 1.5rem;
 }
 
 .thumbnail {
@@ -39,4 +41,58 @@ h2 {
 .repo-link {
     margin-top: 15px;
     margin-bottom: 15px;
+}
+
+.hover:hover {
+    padding: 2%;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 600px) {
+    .section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .div-container {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .thumbnail {
+        width: 90%
+    }
+
+}
+
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .section-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        justify-items: center;
+    }
+
+    .div-container {
+        width: 80%;
+    }
+
+    .thumbnail {
+        width: 90%;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
 }
